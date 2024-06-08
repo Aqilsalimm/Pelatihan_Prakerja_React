@@ -1,0 +1,130 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FCF4F4;
+    color: #141414;
+}
+
+header, main, footer {
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #083C74;
+}
+
+/* Header ini mah */
+.header {
+    background-color: #083C74;
+    color: #ECECE4;
+    text-align: center;
+    padding: 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    color: #ECECE4;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.navbar ul li a:hover {
+    background-color: #141414;
+    border-radius: 5px;
+}
+
+/* Main Content Section */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me, .contact-me, .personal-data {
+    width: 80%;
+    margin: 20px 0;
+    background-color: #ECECE4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-me img {
+    display: block;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+}
+
+/* kontak formulir */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #083C74;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #083C74;
+    color: #ECECE4;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #141414;
+}
+
+/* tabel data personal gweh */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #083C74;
+}
+
+th {
+    background-color: #083C74;
+    color: #ECECE4;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #083C74;
+    color: #ECECE4;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Footer yaa tapi fixed :v */
+@media (max-width: 768px) {
+    .main-content {
+        width: 100%;
+    }
+
+    .about-me, .contact-me, .personal-data {
+        width: 90%;
+    }
+}
