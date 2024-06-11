@@ -4,84 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
     <!-- Header Section -->
-    <header class="header">
-        <h1>Welcome Para Penilai, Silahkan Lihat-Lihat</h1>
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
-        </nav>
+    <header class="header bg-primary text-white text-center py-4">
+        <div class="container">
+            <h1>Welcome Para Penilai, Silahkan Lihat-Lihat</h1>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light mt-4">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Me</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
 
+    <!-- Jumbotron Section -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container text-center">
+            <h1 class="display-4">About Me</h1>
+            <p class="lead">Hello! My name is Aqil. Welcome to my personal website. I Am Become a Professional UIUX Designer, Come on Contact me Anyways.</p>
+        </div>
+    </div>
+
     <!-- Main Content Section -->
-    <main class="main-content">
-        <section class="about-me">
-            <h2>About Me</h2>
-            <img src="Foto 3x4.png" 
-            alt="My Picture" width="200" height="200">
-            <p>Hello! My name is Aqil. Welcome to my personal website. I Am Become a Professional UIUX Designer, Come on Contact me Anyways.</p>
-            <p>Visit my <a href="https://www.linkedin.com/in/mas-muhammad-aqil-salim-5226671b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
-                target="_blank">LinkedIn Profile</a>.</p>
-        </section>
+    <main class="container">
+        <div class="row">
+            <section class="col-md-6 about-me">
+                <h2>About Me</h2>
+                <img src="Foto 3x4.png" alt="My Picture" class="img-fluid rounded-circle mb-3">
+                <p>Visit my <a href="https://www.linkedin.com/in/mas-muhammad-aqil-salim-5226671b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn Profile</a>.</p>
+            </section>
 
-        <!-- Contact Section -->
-        <section class="contact-me">
-            <h2>Contact Me</h2>
-            <form action="/submit-form" method="POST">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
-
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-
-                <label for="phone">Phone Number:</label><br>
-                <input type="tel" id="phone" name="phone" required><br><br>
-
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" required></textarea><br><br>
-
-                <input type="submit" value="Submit">
-            </form>
-        </section>
+            <!-- Contact Section -->
+            <section class="col-md-6 contact-me">
+                <h2>Contact Me</h2>
+                <form action="/submit-form" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea class="form-control" id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </section>
+        </div>
 
         <!-- Personal Data Table -->
-        <section class="personal-data">
+        <section class="personal-data mt-5">
             <h2>My Details</h2>
-            <table border="1">
-                <tr>
-                    <th>Detail</th>
-                    <th>Information</th>
-                </tr>
-                <tr>
-                    <td>Name</td>
-                    <td>Mas Muhammad Aqil Salim</td>
-                </tr>
-                <tr>
-                    <td>Email</td>
-                    <td>aqilsalimm123@gmail.com</td>
-                </tr>
-                <tr>
-                    <td>Phone</td>
-                    <td>+62 89619374255</td>
-                </tr>
-                <tr>
-                    <td>LinkedIn</td>
-                    <td><a href="https://www.linkedin.com/in/mas-muhammad-aqil-salim-5226671b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
-                        target="_blank">My LinkedIn</a></td>
-                </tr>
+            <table class="table table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Detail</th>
+                        <th>Information</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Name</td>
+                        <td>Mas Muhammad Aqil Salim</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>aqilsalimm123@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td>+62 89619374255</td>
+                    </tr>
+                    <tr>
+                        <td>LinkedIn</td>
+                        <td><a href="https://www.linkedin.com/in/mas-muhammad-aqil-salim-5226671b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">My LinkedIn</a></td>
+                    </tr>
+                </tbody>
             </table>
         </section>
     </main>
 
     <!-- Footer Section -->
-    <footer class="footer">
+    <footer class="footer bg-primary text-white text-center py-3">
         <p>©Aqil Company Khusus Pelatihan Prakerja. gaguna Juga sih, silahkan kalian COPAS.</p>
     </footer>
 
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
